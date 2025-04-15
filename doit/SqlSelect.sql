@@ -8,7 +8,7 @@
     # MAX : MAX(열이름) 최대값
     # AS : AS 새로운 이름 : 별칭
 # * : 전부(ALL)
-# FROM : 테이블 이름
+# FROM : 데이터 가져올 테이블 이름
 # INNER JOIN : 테이블 병합(테이블1과 테이블2 공통으로 있는 행만  출력
     # ON : ON 테이블1.열이름 = 테이블2.열이름
     #   ex) SELECT 열이름
@@ -20,7 +20,7 @@
     ex) SELECT 열이름 FROM 테이블1
         UNION (UNION ALL : 중복 다)
         SELECT 열이름 FROM 테이블2;
-# WHERE : 조건문(필터링하는 것) 
+# WHERE : 조건문(조건에 맞는 행만 필터링하는 것) 
     # WHERE 사용법 : AND , OR, !=
     # WHERE 나라 = '멕시코' AND 나이 = 30 : 두 개 이상 조건
     # WHERE 나라 = '멕시코' OR 나이 = 30  : 여러 조건 중 하나
@@ -29,6 +29,7 @@
     # WHERE 이름 NOT LIKE '%y' : y로 끝나지 않는 
     # WHERE 이름 is NOT NULL : NOT NULL 제외
     # BETWEEN : BETWEEN 10 AND 20; 10-20 사이
+    # WHERE TO_CHAR(APNT_YMD, 'YYYY-MM') = '2022-05'
 # GROUP BY : 열 이름
 # HAVING : 조건문 (WHERE 과 비슷하지만, GROUP BY 결과를 필터링)
 # ORDER BY : 열 이름 ASC (DESC)
