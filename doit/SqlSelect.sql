@@ -27,6 +27,7 @@
     # WHERE 나라 != '멕시코' : 제외하고 싶은 필터 '멕시코'
     # WHERE 이름 LIKE 'TOM%' : 일정 패턴 찾을 때 TOM으로 시작하는 %
     # WHERE 이름 NOT LIKE '%y' : y로 끝나지 않는 
+    # WHERE 이름 is NOT NULL : NULL 값 제외
 # BETWEEN : BETWEEN 10 AND 20; 10-20 사이
 # GROUP BY : 열 이름
 # HAVING : 조건문 (WHERE 과 비슷하지만, GROUP BY 결과를 필터링)
@@ -34,4 +35,3 @@
     # SELECT * FROM Products
     # WHERE ProductID BETWEEN 2 AND 3
     # ORDER BY Price DESC; : 가격 기준으로 내림차순 정렬
-
