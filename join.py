@@ -8,3 +8,5 @@ print(result)  # "안녕 세상 Python"
 numbers = ["1", "2", "3", "4"]
 result = "".join(numbers)  # 빈 문자열을 사용하여 붙이기
 print(result)  # "1234"
+
+" ".join(map(str, [1, 2, 3]))
