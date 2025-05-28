@@ -1,20 +1,14 @@
 def solution(k, nums):
     answer = 0
-    k_nums = []
-    while len(k_nums) < k :
-        
-        if nums[0] >= nums[-1] :
-            
-            answer += nums[0]
-            k_nums.append(0)
-            nums.pop(0)
-            
-        else :
-            answer += nums[-1]
-            k_nums.append(-1)
-            nums.pop(-1)
-        
-    
+    n = len(nums)
+    for i in range(k + 1):
+        sumN = 0
+        for j in range(i) :
+            sumN += nums[j]
+        for j in range(n - k + i, n) :
+            sumN += nums[j]
+        answer = max(answer, sumN)
+
     return answer
 
 print(solution(4,[2, 3 ,7, 1, 2, 1, 5]))

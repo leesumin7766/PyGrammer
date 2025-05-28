@@ -1,3 +1,4 @@
+# 브루트포스 = 완전탐색
 h = int(input())
 
 count = 0
