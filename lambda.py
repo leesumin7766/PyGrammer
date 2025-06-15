@@ -1,5 +1,6 @@
 # 함수를 정의할 때 이름 없이 사용할 수 있는 방법
 # lambda 매개변수: 표현식
+# lambda 인자 : 반환값
 def add(x, y):
     return x + y
 
