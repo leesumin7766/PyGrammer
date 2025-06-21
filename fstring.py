@@ -9,3 +9,7 @@ print(f"My name is {name} and I am {age} years old.")
 x = 10
 y = 5
 print(f"x + y = {x + y}")
+
+# 소수점 출력
+answer = 123.456789
+print(f"{answer:.1f}")
